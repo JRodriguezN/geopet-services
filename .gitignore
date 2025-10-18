@@ -23,3 +23,5 @@ env/
 # Pytest / coverage
 htmlcov/
 .coverage
+
+credenciales/firebase-key.json

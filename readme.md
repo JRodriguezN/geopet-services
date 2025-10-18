@@ -19,6 +19,7 @@
 - Pillow (PIL)
 - NumPy / SciPy
 - ImageKit
+- Firebase-Admin
 
 # Instalación
 1. Clonar el repositorio
@@ -33,16 +34,8 @@ Agrega tus claves de ImageKit en .env:
 PUBLIC_API_KEY = "tu_public_api_key"
 PRIVATE_API_KEY = "tu_private_api_key"
 
-Agregar las credenciales de firebase en .env
-FIREBASE_JSON='{
-  "type": "service_account",
-  "project_id": "tu-proyecto",
-  "private_key_id": "xxxx",
-  "private_key": "-----BEGIN PRIVATE KEY-----\n...-----END PRIVATE KEY-----\n",
-  "client_email": "firebase-adminsdk-xxxx@tu-proyecto.iam.gserviceaccount.com",
-  ...
-}'
-
+Agregar las credenciales de firebase en 
+/credenciales/firebase-key.json
 
 Inicia el servidor:
 
