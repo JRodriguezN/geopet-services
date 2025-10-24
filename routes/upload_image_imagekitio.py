@@ -12,7 +12,7 @@ imagekitio = APIRouter()
 @imagekitio.get("/imagekit-auth")
 def get_imagekit_auth():
     token =  secrets.token_hex(16)
-    expire = int(time.time()) + 60 * 60 # 1hora
+    expire = int(time.time()) + 1800 
     
     signature = hmac.new(
         PRIVATE_API_KEY.encode('utf-8'),

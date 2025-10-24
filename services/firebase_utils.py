@@ -1,5 +1,6 @@
 import firebase_admin
 from firebase_admin import credentials, firestore
+from google.cloud.firestore_v1 import FieldFilter
 
 cred = credentials.Certificate('credenciales/firebase-key.json')
 firebase_admin.initialize_app(cred)
@@ -8,7 +9,8 @@ db = firestore.client()
 
 def obtener_mascotas_perdidas():
     mascotas_ref = db.collection('mascotas')
-    query = mascotas_ref.where('estaPerdida', '==', True)
+    query = mascotas_ref.where(filter=FieldFilter('estaPerdida', '==', True)
+)
     docs = query.stream()
     mascotas = []
     for doc in docs:

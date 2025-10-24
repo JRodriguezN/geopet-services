@@ -1,4 +1,4 @@
 fastapi[standard] == 0.119.0
-tensorflow == 2.20.0rc0
+tensorflow-cpu == 2.20.0
 firebase_admin == 7.1.0
 scipy == 1.16.1
