@@ -25,3 +25,4 @@ htmlcov/
 .coverage
 
 credenciales/firebase-key.json
+credenciales/firebase-key.b64.txt

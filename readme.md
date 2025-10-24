@@ -37,6 +37,11 @@ PRIVATE_API_KEY = "tu_private_api_key"
 Agregar las credenciales de firebase en 
 /credenciales/firebase-key.json
 
+convertir las credenciales en base64:
+[Convert]::ToBase64String([System.IO.File]::ReadAllBytes("credenciales/firebase-key.json")) > firebase-key.b64.txt
+
+Copiar el contenido del archivo firebase-key.b64.txt a la variable de entorno: FIREBASE-KEY
+
 Inicia el servidor:
 
 uvicorn main:app --reload
