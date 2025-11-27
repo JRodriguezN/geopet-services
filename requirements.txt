@@ -3,3 +3,4 @@ tensorflow-cpu == 2.20.0
 firebase_admin == 7.1.0
 scipy == 1.16.1
 stripe == 13.0.1
+imagekitio == 4.2.0
